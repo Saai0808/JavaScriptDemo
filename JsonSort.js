@@ -29,10 +29,10 @@ function sortNodesForInsert(inputJson) {
   return properJsonOutput;
 };
 
-function sortNodes(category, map, sortedNodes) {
-	sortedNodes.push(category);
+function sortNodes(node, map, sortedNodes) {
+	sortedNodes.push(node);
 	
-	var childNodes = map[category.id];	
+	var childNodes = map[node.id];	
 	
 	if(!childNodes) 
 		return;
